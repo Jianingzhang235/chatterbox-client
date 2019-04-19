@@ -1,6 +1,8 @@
 var App = {
 
-  $spinner: $('.spinner img'),
+  
+
+  // $spinner: $('.spinner img'),
 
   username: 'anonymous',
 

@@ -10,3 +10,6 @@ var MessageView = {
     `)
 
 };
+
+
+// create a template function to render a message to HTML
