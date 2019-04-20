@@ -4,8 +4,8 @@ var MessageView = {
      
       <div class="chat">
         <div class="username"></div>
-        //this is where the display of the message will show along with the name
-        <div></div>
+        <div class="message"><%= text %></div>
+        <div class="room"><%= roomname %></div>
       </div>
     
     `)

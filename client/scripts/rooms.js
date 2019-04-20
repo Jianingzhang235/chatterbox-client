@@ -1,7 +1,12 @@
 var Rooms = {
-//here we should create an add function
-  addRoom: function(roomName){
-    var rooms = {};
-    // if(!rooms[roomName]) rooms[roomName] = roomName
+  $button: $('#rooms button'),
+  $select: $('#rooms select'),
+  
+  add: function(roomname){
 
+
+    var addedRoom = $('<div>'+ roomname + '</div>');
+    this.$select.append(addedRoom);
+    
+  }
 };

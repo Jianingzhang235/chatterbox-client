@@ -3,18 +3,23 @@ var MessagesView = {
   $chats: $('#chats'),
 
   initialize: function() {
-    //here we have to show all stored chats with this.$chats
+    var chats = this.$chats
+    console.log(chats);
   },
 
-  render: function(message) {
-    //Here we need to use the render method on render MessageView and pass in the message
+  
+    renderMessage: function(message) {
+      
+      var myMessage = MessageView.render(message);
+      
+      this.$chats.append(myMessage);
+  
+      this.$chats.find('.username').on('click',function(){
+        Friends.toggleStatus();
+      })
     
-    //here we need to append the message
-    // to this.$chats
-    
-    //here we need to find the $chats user using the find method
   }
 
+  
 };
 
-// create a template function to render a message to HTML
