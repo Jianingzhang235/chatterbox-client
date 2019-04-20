@@ -6,7 +6,7 @@ var App = {
 
   username: 'anonymous',
   
-    mainRoom: '?',
+  // mainRoom: '?',
   
   initialize: function() {
     App.username = window.location.search.substr(10);

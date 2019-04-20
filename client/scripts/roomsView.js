@@ -8,10 +8,10 @@ var RoomsView = {
   },
 
   renderRoom: function(newRoom) {
-    var text = '<div class="room"><%= newRoom %></div>'
+    var text = '<div class="room"><%= newRoom %></div>';
     this.$select.append(text);
 
 
 
   }
-}  
+};  

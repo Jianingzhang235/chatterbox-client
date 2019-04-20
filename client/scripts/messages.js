@@ -1,6 +1,6 @@
 var Messages = {
-  driver : "dog",
-  navigator : "cat",
-  destination : "moon"
+  username: 'Mel Brooks',
+  text: 'It\'s good to be the king',
+  roomname: 'lobby'
 };
 
