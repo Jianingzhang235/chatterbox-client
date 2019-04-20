@@ -5,7 +5,8 @@ var App = {
   $spinner: $('.spinner img'),
 
   username: 'anonymous',
-  //here we need to add a room
+  
+  
   initialize: function() {
     App.username = window.location.search.substr(10);
 
