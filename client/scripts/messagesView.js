@@ -1,3 +1,4 @@
+    
 var MessagesView = {
 
   $chats: $('#chats'),
@@ -6,6 +7,16 @@ var MessagesView = {
   },
 
   render: function() {
+  	Messages
+  	.items()
+  	// .filter(Room.isSelected(message))
+    .each((message) => {
+      var $message = MessageView.render(message);
+      MessagesView.$chats.prepend($message);
+
+    });
   }
 
 };
+
+
