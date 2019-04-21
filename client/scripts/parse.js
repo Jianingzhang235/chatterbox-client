@@ -22,7 +22,7 @@ var Parse = {
 
   readAll: function(successCB, errorCB = null) {
     $.ajax({
-  url: 'http://parse.hrr.hackreactor.com/chatterbox/classes/messages',
+  url: Parse.server,
       type: 'GET',
       data: { order: '-createdAt' },
       contentType: 'application/json',
