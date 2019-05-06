@@ -9,11 +9,11 @@ var FormView = {
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-<<<<<<< HEAD
+
     //use the find form methods to access the message
-=======
-    var message = {  
-      roomname: 'lobby',         
+
+    var message = {
+      roomname: 'lobby',
   text: FormView.$form.find('#message').val(),
   username: App.username
 
@@ -23,14 +23,11 @@ var FormView = {
       Messages.add(message, MessagesView.render);
 
     });
- 
->>>>>>> solo1
-    console.log('click!');
   },
 
-  setStatus: function(active) {
+  setStatus: function (active) {
     var status = active ? 'true' : null;
     FormView.$form.find('input[type=submit]').attr('disabled', status);
   }
 
-};
+}

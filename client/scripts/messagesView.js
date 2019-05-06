@@ -1,4 +1,4 @@
-    
+
 var MessagesView = {
 
   $chats: $('#chats'),
@@ -8,24 +8,7 @@ var MessagesView = {
     console.log(chats);
   },
 
-<<<<<<< HEAD
-  
-  renderMessage: function(message) {
-    
-    var myMessage = MessageView.render(message);
-    
-    this.$chats.append(myMessage);
 
-    this.$chats.find('.username').on('click',function(){
-      Friends.toggleStatus();
-    });
-    
-  }
-
-  
-};
-
-=======
   render: function() {
   	Messages
   	.items()
