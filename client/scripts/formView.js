@@ -11,13 +11,13 @@ var FormView = {
     event.preventDefault();
     //use the find form methods to access the message
     var message = {
-      roomname: 'lobby',
+      username: App.username,
       text: FormView.$form.find('#message').val(),
-      username: App.username
+      roomname: Rooms.selected || 'lobby'
     };
 
     Parse.create(message, (data) => {
-      // _.extend(message, data);
+      _.extend(message, data);
       Messages.add(message, MessagesView.render);
 
     });
